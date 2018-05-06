@@ -5,7 +5,7 @@
  */
 
 const
-    PORT = 2017,
+    PORT = 3000,
     logger = require('./logger'),
     app = require('./app');
 

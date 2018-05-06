@@ -16,6 +16,7 @@ const
 module.exports = (prefix, dir) => {
     return async (ctx, next) => {
         let rpath = ctx.request.path;
+       // console.log(rpath);
         if (rpath.startsWith(prefix)) {
             let fp = path.join(dir, rpath.substring(prefix.length));
             if (await fs.exists(fp)) {

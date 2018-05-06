@@ -2,6 +2,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach",
+            "port": 9229
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/app.js"
+        },
+        {
             "name": "Start",
             "type": "node",
             "request": "launch",
@@ -11,10 +23,7 @@
             "cwd": "${workspaceRoot}/www",
             "preLaunchTask": null,
             "runtimeExecutable": null,
-            "runtimeArgs": [
-                "--nolazy",
-                "--use_strict"
-            ],
+    
             "env": {
                 "NODE_ENV": "development"
             },

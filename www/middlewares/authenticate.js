@@ -24,7 +24,8 @@ const
 function _verifyPassword(id, passwd, expectedHash) {
     logger.debug(`local id: ${id}, password: ${passwd}.`);
     let actualHash = crypto.createHash('sha1').update(id + ':' + passwd).digest('hex');
-    return actualHash === expectedHash;
+    //return true;
+  return actualHash === expectedHash;
 }
 
 // parse header 'Authorization: Basic xxxx'

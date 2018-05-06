@@ -11,7 +11,7 @@
  */
 module.exports = {
     // server domain name:
-    domain: 'local.itranswarp.com',
+    domain: 'www.vinlineskater.com',
     // behind a reverse proxy:
     proxy: false,
     // the theme used, default to 'default':
@@ -39,11 +39,11 @@ module.exports = {
         // mysql username:
         username: 'root',
         // mysql password:
-        password: 'password',
+        password: 'root',
         // database name:
         database: 'itranswarp',
         // log sql:
-        showSql: false,
+        showSql: true,
         // pool settings:
         maxConnections: 20,
         minConnections: 1,
@@ -54,7 +54,7 @@ module.exports = {
         prefix: 'itw/',
         // memcached host or ip address:
         host: '127.0.0.1',
-        // memcached port, default to 11211:
+        //  port, default to 11211:
         port: 11211,
         // connection timeout, default to 1 second:
         timeout: 1000,
@@ -95,11 +95,11 @@ module.exports = {
     // oauth2 providers that allow sign in from other oauth2 providers:
     oauth2: {
         // e.g. facebook oauth2 configuration:
-        // 'faceook': {
-        //     'icon': 'facebook',
-        //     'name': 'Sign in with Facebook',
-        //     'app_key': 'your-app-id',
-        //     'app_secret': 'your-app-secret',
-        // }
+           'facebook': {
+             'icon': 'github',
+             'name': 'Sign in with github',
+             'app_key': 'your-app-id',
+             'app_secret': 'your-app-secret',
+         }
     }
 };
